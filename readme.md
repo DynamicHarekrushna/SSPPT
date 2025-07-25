@@ -90,4 +90,5 @@ python, tkinter, pomodoro, productivity, study-planner, json, gui, timer, task-m
 
 ---
 
-**Built with Python and discipline. Made by HK & Payal**
+                              **Built with Python and discipline. 
+                                      Made by HK & Payal**
