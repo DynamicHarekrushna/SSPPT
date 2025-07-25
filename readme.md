@@ -1,104 +1,92 @@
-#Smart Study Planner with Pomodoro Timer
--------------
-A minimalistic, cross-platform Python application for task-based study planning and focused time management using Pomodoro sessions. Built with Tkinter for the GUI and JSON for persistent local storage.
+# Smart Study Planner with Pomodoro Timer
 
-🚀 Features
-Task Management: Add multiple study tasks with custom Pomodoro durations.
+A minimalistic, cross-platform Python application for task-based study planning and focused time management using Pomodoro sessions. Built with Tkinter for the **GUI** and **JSON** for persistent local storage.
 
-Custom Pomodoro Timer: Input any duration in HH:MM:SS (e.g., 00:25:00 for 25 minutes).
+## 🚀 Features
 
-Persistent Data: All tasks are saved in a local JSON file and persist between sessions.
+- **Task Management:** Add multiple study tasks with custom Pomodoro durations.
+- **Custom Pomodoro Timer:** Input any duration in `HH:MM:SS` (e.g., `00:25:00` for 25 minutes).
+- **Persistent Data:** All tasks are saved in a local JSON file and persist between sessions.
+- **Intuitive Dual-Window Interface:**
+  - **Window 1:** Add new tasks, specify durations, and view all saved tasks.
+  - **Window 2:** For each task, a dedicated timer window with Start, Stop, and Reset functions.
+- **Input Validation:** Ensures time is always in proper `HH:MM:SS` format for reliability.
+- **Clean UI:** Compact, distraction-free layout inspired by productivity minimalist principles.
+- **Fully beginner-friendly:** Easy to understand, modify, and expand.
 
-Intuitive Dual-Window Interface:
-
-Window 1: Add new tasks, specify durations, and view all saved tasks.
-
-Window 2: For each task, a dedicated timer window with Start, Stop, and Reset functions.
-
-Input Validation: Ensures time is always in proper HH:MM:SS format for reliability.
-
-Clean UI: Compact, distraction-free layout inspired by productivity minimalist principles.
-
-Fully beginner-friendly: Easy to understand, modify, and expand.
-
-🖼️ App Screenshots
-[Add screenshots by saving app window images and uploading to your repo.]
-
-📂 File Structure
-text
+## 📂 File Structure
 /project-root
 │
-├── main.py                 # Entry point: launches TaskInputWindow
-├── data_utils.py           # (optional) Functions for loading/saving/validating JSON and time
-├── task_input_window.py    # (optional) TaskInputWindow class
-├── timer_window.py         # (optional) TimerWindow class
-├── tasks.json              # Local storage for persistent user tasks (auto-created)
+├── SSPPT.py # Complete Smart Study Planner with Pomodoro Timer
+├── tasks.json # Local storage for persistent user tasks (auto-created)
 ├── README.md
 └── ...
-For simple projects, all classes can be in one file (e.g., main.py) as well.
 
-⚡ Quick Start
-1. Clone this repository:
 
-bash
-git clone https://github.com/your-username/smart-study-planner.git
-cd smart-study-planner
-2. Run the app:
+_For simple projects, all classes can be in one file (e.g., `SSPPT.py`) as well._
 
-bash
-python main.py
-3. Requirements:
+## ⚡ Quick Start
 
-Python 3.x (3.6+ recommended)
+1. **Clone this repository:**
+    ```
+    git clone https://github.com/your-username/smart-study-planner.git
+    cd SSPPT
+    ```
 
-No external dependencies—Tkinter and json are built-in
+2. **Run the app:**
+    ```
+    python SSPPT.py
+    ```
 
-🛠️ Usage
-1. Add a Task
-Enter your task's title and desired time (HH:MM:SS) in the interface.
+3. **Requirements:**
+    - Python 3.x (3.6+ recommended)
+    - No external dependencies—Tkinter and json are built-in
 
-Click "Add Task" to save and launch a Pomodoro window.
+## 🛠️ Usage
 
-2. Manage Your Timer
-Use START to begin countdown, STOP to pause, and RESET to return to the original time.
+1. **Add a Task**  
+   Enter your task's title and desired time (`HH:MM:SS`) in the interface.  
+   Click **"Add Task"** to save and launch a Pomodoro window.
 
-Timer counts down in real time and informs you when time is up.
+2. **Manage Your Timer**  
+   Use **START** to begin countdown, **STOP** to pause, and **RESET** to return to the original time.  
+   Timer counts down in real time and informs you when time is up.
 
-3. View All Tasks
-Press "Show All Task" to see a popup of all stored tasks and their durations anytime.
+3. **View All Tasks**  
+   Press **"Show All Task"** to see a popup of all stored tasks and their durations anytime.
 
-💾 Data Persistence
-All tasks and timings are stored in a local file called tasks.json.
+## 💾 Data Persistence
 
-Closing and reopening the program retains your entire task list for future use.
+- All tasks and timings are stored in a local file called `tasks.json`.
+- Closing and reopening the program retains your entire task list for future use.
 
-📚 Code Guide
-TaskInputWindow: Handles the first window, user input, validation, and creation of new TimerWindow instances.
+## 📚 Code Guide
 
-TimerWindow: Manages live countdown timer, and start/stop/reset buttons.
-
-data_utils.py: (optional for modular projects) Includes all JSON and time conversion logic.
+- **TaskInputWindow:** Handles the first window, user input, validation, and creation of new TimerWindow instances.
+- **TimerWindow:** Manages live countdown timer, and start/stop/reset buttons.
+- **data_utils.py:** (optional for modular projects) Includes all JSON and time conversion logic.
 
 Check commented sections in the code for further guidance on function and class roles.
 
-👥 Collaboration
-This project was collaboratively developed by [Your Name] and [Friend's Name].
-Open to contributions—see CONTRIBUTING.md for guidelines or start an Issue/PR!
+## 👥 Collaboration
 
-📃 License
-MIT License – free for modification and use!
+This project was collaboratively developed by HK & Payal.  
 
-🤔 FAQ
-Q: Can I use this for things other than studying?
+## 🤔 FAQ
+
+**Q: Can I use this for things other than studying?**  
 A: Yes! Add any task and set a timer—works for work sessions, exercise, breaks, and more.
 
-Q: Time input isn't working!
-A: Ensure your input matches HH:MM:SS (00:25:00 for 25 minutes, for example). Only values between 00:00:01 and 99:59:59 are valid.
+**Q: Time input isn't working!**  
+A: Ensure your input matches `HH:MM:SS` (`00:25:00` for 25 minutes, for example). Only values between `00:00:01` and `99:59:59` are valid.
 
-Q: Where is my data stored?
-A: All your tasks are in tasks.json in the app directory.
+**Q: Where is my data stored?**  
+A: All your tasks are in `tasks.json` in the app directory.
 
-🏷️ Keywords
+## 🏷️ Keywords
+
 python, tkinter, pomodoro, productivity, study-planner, json, gui, timer, task-management, minimalist, open-source
 
-Built with Python and discipline. Made by ____ & ____
+---
+
+**Built with Python and discipline. Made by HK & Payal**
