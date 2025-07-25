@@ -15,13 +15,14 @@ A minimalistic, cross-platform Python application for task-based study planning 
 - **Fully beginner-friendly:** Easy to understand, modify, and expand.
 
 ## 📂 File Structure
+```
 /project-root
 │
 ├── SSPPT.py # Complete Smart Study Planner with Pomodoro Timer
 ├── tasks.json # Local storage for persistent user tasks (auto-created)
 ├── README.md
 └── ...
-
+```
 
 _For simple projects, all classes can be in one file (e.g., `SSPPT.py`) as well._
 
